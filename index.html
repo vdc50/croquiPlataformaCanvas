@@ -11,15 +11,24 @@
     </style>
   </head>
   <body>
-    <img
-      src="circunferencia-com-angulos-1.png"
-      width="300"
-      height="300"
-      alt=""
-    />
-    <img src="modeloDoBM.png" width="350" height="300" alt="" />
+    <div id>
+      <img src="circunferencia-com-angulos-1.png" width="350" height="350" />
 
-    <canvas id="croqui" width="300" height="300"></canvas>
+      div.img{src="modeloDoBM.png" position="relative" width="200" height="200"}
+      alt=""
+      <!-- <canvas id="croqui" width="300" height="300"></canvas>-->
+    </div>
+
+    <!-- <img src="" width="" height="" alt="" /> -->
   </body>
-  <script></script>
+  <script>
+    let canvas = document.querySelector("#croqui");
+    let ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "rgb(200, 200, 200)";
+    ctx.fillRect(10, 10, 50, 50);
+
+    ctx.filltyle = "rgb(0, 0, 115)";
+    ctx.fillRect = (20, 20, 100, 100);
+  </script>
 </html>
